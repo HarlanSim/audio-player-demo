@@ -1,5 +1,5 @@
 import React from 'react';
-import SongDetails from './SongDetails';
+import SongInfo from './SongInfo';
 import PlaybackButtons from './PlaybackButtons';
 import PlaybackProgress from './PlaybackProgress';
 import { ISong } from '../../utils/interfaces';
@@ -33,7 +33,7 @@ const PlaybackDisplay = ({
 }: PlaybackDisplayProps) => {
   return (
     <div className='playback-footer flex flex-row items-center w-9/12 justify-between gap-16'>
-      <SongDetails artist={song.artist} title={song.title} />
+      <SongInfo artist={song.artist} title={song.title} />
       <PlaybackButtons
         setNextSong={setNextSong}
         playPrevious={playPrevious}

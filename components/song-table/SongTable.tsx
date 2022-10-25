@@ -1,5 +1,4 @@
 import React from 'react';
-import { TABLE_HEADERS } from '../../utils/constants';
 import { ISong } from '../../utils/interfaces';
 import SongRow from './SongRow';
 
@@ -42,5 +41,7 @@ const SongTable = ({ songs, currentSongIndex, playSong }: SongListProps) => {
     </div>
   );
 };
+
+const TABLE_HEADERS = ['Artist', 'Song'];
 
 export default SongTable;

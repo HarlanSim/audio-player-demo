@@ -16,24 +16,6 @@ const PlaybackProgress = ({
     (currentSongTime / duration)
   ).toString();
 
-  const getPlaybackTime = (seconds) => {
-    let mins = Math.floor(seconds / 60);
-    seconds = seconds - mins * 60;
-    return getTimeString(mins) + ':' + getTimeString(seconds);
-  };
-
-  const getTimeString = (time) => {
-    if (time === null || time === 0) {
-      return '00';
-    } else {
-      let timeString = time.toString();
-      if (timeString.length === 1) {
-        timeString = '0' + timeString;
-      }
-      return timeString;
-    }
-  };
-
   const handleChange = (e) => {
     const percentage = e.target.value / 100;
     setCurrentSongTime(Math.floor(duration * percentage));
@@ -54,5 +36,23 @@ const PlaybackProgress = ({
     </div>
   );
 };
+
+function getPlaybackTime(seconds: number): string {
+  let mins = Math.floor(seconds / 60);
+  seconds = seconds - mins * 60;
+  return getTimeString(mins) + ':' + getTimeString(seconds);
+}
+
+function getTimeString(time: number): string {
+  if (time === null || time === 0) {
+    return '00';
+  } else {
+    let timeString = time.toString();
+    if (timeString.length === 1) {
+      timeString = '0' + timeString;
+    }
+    return timeString;
+  }
+}
 
 export default PlaybackProgress;

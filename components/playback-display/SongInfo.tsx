@@ -1,11 +1,11 @@
 import React from 'react';
 
-type SongDetailsProps = {
+type SongInfoProps = {
   artist: string;
   title: string;
 };
 
-const SongDetails = ({ artist, title }: SongDetailsProps) => {
+const SongInfo = ({ artist, title }: SongInfoProps) => {
   return (
     <div className='song-details select-none'>
       <div className='text-lg text-gray-900'>{title}</div>
@@ -14,4 +14,4 @@ const SongDetails = ({ artist, title }: SongDetailsProps) => {
   );
 };
 
-export default SongDetails;
+export default SongInfo;

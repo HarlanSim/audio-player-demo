@@ -37,7 +37,7 @@ const PlaybackButtons = ({
     );
   };
   return (
-    <div className='flex gap-4 justify-around'>
+    <div className='flex gap-5 justify-around'>
       <FontAwesomeIcon
         className={iconClassName(shuffleToggle)}
         icon={faShuffle}

@@ -6,7 +6,7 @@ const SongRow = ({ artist, title, index, currentSongIndex, playSong }) => {
 
   return (
     <tr
-      className='bg-white border-b border-l transition duration-300 ease-in-out hover:bg-gray-100 cursor-pointer'
+      className='bg-white border-b border-l transition duration-300 ease-in-out select-none hover:bg-gray-100 cursor-pointer'
       key={index}
       onClick={() => playSong(index)}
     >

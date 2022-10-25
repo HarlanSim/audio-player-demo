@@ -40,7 +40,7 @@ const PlaybackProgress = ({
   };
 
   return (
-    <div className='flex flex-row flex-grow items-center gap-4'>
+    <div className='flex flex-row flex-grow items-center gap-4 select-none'>
       <span className='text-sm'>{getPlaybackTime(currentSongTime)}</span>
       <input
         id='default-range'

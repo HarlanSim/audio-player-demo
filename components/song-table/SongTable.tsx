@@ -19,7 +19,7 @@ const SongTable = ({ songs, currentSongIndex, playSong }: SongListProps) => {
               <th
                 key={headerIdx}
                 scope='col'
-                className='text-sm font-medium text-gray-900 px-6 py-4 text-left sticky top-0 bg-white border-b'
+                className='text-sm select-none font-medium text-gray-900 px-6 py-4 text-left sticky top-0 bg-white border-b'
               >
                 {headerText}
               </th>

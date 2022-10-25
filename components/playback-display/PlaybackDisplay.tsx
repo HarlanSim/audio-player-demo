@@ -32,7 +32,7 @@ const PlaybackDisplay = ({
   setRepeatToggle,
 }: PlaybackDisplayProps) => {
   return (
-    <div className='playback-footer w-9/12 justify-between gap-16'>
+    <div className='playback-footer flex flex-row items-center w-9/12 justify-between gap-16'>
       <SongDetails artist={song.artist} title={song.title} />
       <PlaybackButtons
         setNextSong={setNextSong}
